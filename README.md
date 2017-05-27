@@ -10,5 +10,5 @@
 
 正文内容使用 load 方式载入页面，该方式对开发环境js调试不太友好。
 
-页头，左侧导航使用了 position:fixed; 不兼容低版本浏览器，建议使用 IE9+，Firefox，chrome，360兼容模式。
+css中使用了 position:fixed; border-rasius 等属性，不兼容低版本浏览器，建议使用 IE9+，Firefox，chrome，360兼容模式。
  
