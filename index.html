@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="static/common/font-icon/style.css" />
+		<link rel="stylesheet" href="static/common/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="static/css/index.css" />
+		<script src="//apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="static/common/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container-fluid touring-cate">
+			<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">dobcms<small>v0.1</small></a>
+
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control input-sm" placeholder="全局搜索">
+						</div>
+						<button type="submit" class="btn btn-sm btn-primary">搜索</button>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="icon-trc-headimg"></span>管理员 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">控制面板</a>
+								</li>
+								<li>
+									<a href="#">导航二</a>
+								</li>
+								<li>
+									<a href="#">导航三</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">退出登录</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">注销登录</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="side-bar">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a data-nav="index.html" class="active"><span class="icon-trc-man"></span>首页</a>
+					</li>
+					<li class="list-group-item">
+						<a data-nav="classfiy/classfiy.html"><span class="glyphicon glyphicon-list-alt"></span>分类管理</a>
+						<ul>
+							<li><a data-nav="classfiy/classfiyAdd.html">新增分类</a></li>
+							<li><a data-nav="classfiy/classfiyList.html">分类列表</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<a data-nav="article/article.html"><span class="glyphicon glyphicon-duplicate"></span>文章管理</a>
+						<ul>
+							<li><a data-nav="article/articleAdd.html">新增文章</a></li>
+							<li><a data-nav="article/articleList.html">文章列表</a></li>
+						</ul>
+					</li>					
+					<li class="list-group-item">
+						<a data-nav="system/system.html"><span class="glyphicon glyphicon-cog"></span>系统设置</a>
+						<ul>
+							<li><a data-nav="system/systemParams.html">系统参数</a></li>
+							<li><a data-nav="system/systemUser.html">管理员设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="content" class="container-fluid touring-container"></div>
+		</div><!--End container-fluid touring-cate-->
+
+		<script type="text/javascript" src="static/js/index.js"></script>
+	</body>
+
+</html>
